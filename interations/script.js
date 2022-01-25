@@ -6,6 +6,13 @@ menuBtn.onclick = () => {
     navbar.classList.toggle('active')
 };
 
+window.onscroll = () => {
+  if (menuBtn.classList == 'fas fa-bars fa-times') {
+    menuBtn.classList.toggle('fa-times');
+    navbar.classList.remove('active');
+  };
+};
+
 var swiper = new Swiper(".home-slider", {
     grabCursor: true,
     loop: true,
