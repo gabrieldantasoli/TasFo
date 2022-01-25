@@ -12,6 +12,9 @@
     <!-- swiper link -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
+    <!-- cdn light gallery link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
     <!-- custon css link-->
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -220,12 +223,46 @@
 
     <!-- SECTION GALLERY STARTS--> 
 
-    
+    <section class="gallery" id="gallery">
+
+        <div class="heading">
+            <span>our gallery</span>
+            <h3>our untold stroies</h3>
+        </div>
+
+        <div class="gallery-container">
+            <a href="images/food-galler-img-1.jpg" class="box">
+                <img src="images/food-galler-img-1.jpg" >
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </a>
+            <a href="images/food-galler-img-2.jpg" class="box">
+                <img src="images/food-galler-img-2.jpg" >
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </a>
+            <a href="images/food-galler-img-3.jpg" class="box">
+                <img src="images/food-galler-img-3.jpg" >
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </a>
+            <a href="images/food-galler-img-4.jpg" class="box">
+                <img src="images/food-galler-img-4.jpg" >
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </a>
+            <a href="images/food-galler-img-5.jpg" class="box">
+                <img src="images/food-galler-img-5.jpg" >
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </a>
+            <a href="images/food-galler-img-6.jpg" class="box">
+                <img src="images/food-galler-img-6.jpg" >
+                <div class="icon"><i class="fas fa-plus"></i></div>
+            </a>
+        </div>
+    </section>
 
     <!-- SECTION GALLERY ENDS--> 
 
     <!-- SECTION MENU STARTS--> 
-
+    
+    
 
     <!-- SECTION MENU ENDS--> 
 
@@ -245,12 +282,17 @@
 
 
 
-
+    <!-- script cdn light gallery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
 
     <!-- script swiper link -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!-- custom jsvascript -->
     <script src="interations/script.js"></script>
+
+    <script>
+        lightGallery(document.querySelector('.gallery .gallery-container'));
+    </script>
 </body>
 </html>
